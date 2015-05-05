@@ -23,7 +23,7 @@ $(function(){
 
 				  $( "#showList" ).html( data );
 				  //alert( "Load was performed." );
-				  //$('#showList').unbind();
+				  $('#showList').unbind();
 				  
 				   
 			}
@@ -33,20 +33,7 @@ $(function(){
 		});
 
 
-	$.ajax({
-			type:'GET',
-			url: '../events/add',
-			success: function(data){
-
-				  $( "#addEvent" ).html( data );
-				  alert( "Load was performed." );
-				  $('#showList').unbind();
-				   
-			}
-
-
-
-		});
+	 
 	 
 
 
@@ -145,7 +132,7 @@ $(function(){
 
   			 });
 
-    $( "#show" ).dialog();
+    
 
 
 

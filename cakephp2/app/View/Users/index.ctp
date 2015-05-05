@@ -39,9 +39,9 @@
 				<h1><?php echo $user['User']['firstname'] ?> <?php echo $user['User']['lastname'] ?></h1>
 				<div id = "datepicker"></div>
 				<br>
-				<div id="addEvent"></div>
+				 
                 <!--<a href="#" class="btn btn-lg btn-success" id="showEvent" >Show Event</a>-->
-				
+				<a href="../events/add" class="btn btn-lg btn-success" id="openModal" >Add Event</a>
                 <div id = "showList"></div>
 			</div>
 			<div class="col-md-9">

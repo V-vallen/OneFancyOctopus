@@ -35,6 +35,7 @@ public function view($id) {
         $this->set('post', $post);
     }
  // DELETE Event
+
  public function delete($id) {
     if ($this->request->is('get')) {
         throw new MethodNotAllowedException();
@@ -84,6 +85,7 @@ public function close() {
     return $this->redirect(array('action' => '../users/index'));
 	}
 
+// JOIn to the event
 public function join($id){
  
      $this->EventUser->create();
@@ -101,14 +103,14 @@ public function join($id){
 }
 
 public function add() {
-        /*if ($this->request->is('post')) {
+        if ($this->request->is('post')) {
             $this->Event->create();
             if ($this->Event->save($this->request->data)) {
                 $this->Session->setFlash(__('Your post has been saved.'));
                 return $this->redirect(array('action' => '../users/index'));
             }
             $this->Session->setFlash(__('Unable to add your post.'));
-        }*/
+        }
     }
 
 public function event_form(){
