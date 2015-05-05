@@ -8,8 +8,8 @@ $(function(){
                     events.push({
                         title: "'"+t[i].title+"'",
                         start: "'"+t[i].start+"'",
-                        end: "'"+t[i].end+"'"
-
+                        end: "'"+t[i].end+"'",
+                        id: "'"+t[i].id+"'"
                         
                		});
     }
@@ -23,7 +23,7 @@ $(function(){
 
 				  $( "#showList" ).html( data );
 				  //alert( "Load was performed." );
-				  $('#showList').unbind();
+				  //$('#showList').unbind();
 				  
 				   
 			}
@@ -31,6 +31,8 @@ $(function(){
 
 
 		});
+
+
 
 
 	 
@@ -102,7 +104,7 @@ $(function(){
 
 		var endTime = moment(calEvent.end);
 		var e = endTime.format("h:mm a");
-
+		var id = calEvent.id;
        $('#startDate').text(sd);
        $('#endDate').text(ed);
 	   $('#startTime').text(s);

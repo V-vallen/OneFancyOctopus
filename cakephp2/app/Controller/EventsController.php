@@ -67,10 +67,10 @@ public function view($id) {
     }
 
     if ($this->request->is(array('post', 'put'))) {
-        $this->Post->id = $id;
-        if ($this->Post->save($this->request->data)) {
+        $this->Event->id = $id;
+        if ($this->Event->save($this->request->data)) {
             $this->Session->setFlash(__('Your post has been updated.'));
-            return $this->redirect(array('action' => 'index'));
+            return $this->redirect(array('action' => '../users/index'));
         }
         $this->Session->setFlash(__('Unable to update your post.'));
     }

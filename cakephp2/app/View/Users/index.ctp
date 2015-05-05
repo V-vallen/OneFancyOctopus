@@ -24,7 +24,7 @@
                 <li class="active"><a href="/">About</a></li>
                 <!--<li ><a href="/add_event">Add Event</a></li>                
                 <li ><a href="#" id="openModal">Test</a></li>-->
-                <li ><a href="/model">Logout</a></li>
+                <li ><a href="front">Logout</a></li>
                  
             </ul>
         </div>

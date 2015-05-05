@@ -24,16 +24,16 @@ echo $this->Form->input('end', array(
     'maxYear' => date('Y') + 10,
 ));
 
-/*echo $this->Form->input('S_time', array(
-    'type'=>'time',
-    'label' => 'Start Time:   ',
+/*echo $this->Form->dateTime('S_time', array(
      
+    'timeFormat'=> '12',
+     'label' => 'Start Time:   '
      
 ));
 
 
-echo $this->Form->input('E_time', array(
-    'type'=>'time',
+echo $this->Form->dateTime('E_time', array(
+     'format' => '12',
     'label' => 'End Time:   ',
 
 

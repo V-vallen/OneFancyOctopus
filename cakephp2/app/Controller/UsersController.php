@@ -31,7 +31,7 @@ class UsersController extends AppController{
 		
 	//}*/
 	public function front(){
-        $this->set('groups', $this->User->Event->find('join'));
+        //$this->set('groups', $this->User->find('list'));
 	}
 	 
 	public function test() {
@@ -46,7 +46,7 @@ class UsersController extends AppController{
 	
 
     public function index() {
-    	$this->set('user', $this->User->findById(1));
+    	$this->set('user', $this->User->findByUsername('qwert'));
 
         /*$this->set('user',$this->User->find('all', array( 
         'conditions' => array(
