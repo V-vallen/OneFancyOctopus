@@ -1,3 +1,4 @@
+ 
 <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -7,48 +8,50 @@
             </div>
             <!--Body-->
             <div class="modal-body">
-                 <form class = "form-horizontal">
+                 <form class = "form-horizontal" action='../events/test.ctp' method="POST">
       <fieldset>
       <!-- Text input-->
+
         <div class="form-group">
           <label class="col-md-4 control-label" for="textinput">Event</label>  
           <div class="col-md-4">
-          <input id="textinput" name="textinput" type="text" placeholder="Event Name" class="form-control input-md">
+        	 <input id="textinput" name="event_name" type="text" placeholder="Event Name" class="form-control input-md">
+           <!--<?php echo $this->Form->input('title');?>-->
           </div>
         </div>
         <!-- S Date input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="dateinput">Start Date</label>  
           <div class="col-md-4">
-          <input id="dateinput" name="dateinput" type="date"  class="form-control input-md">
+          <input id="dateinput" name="datestart" type="date"  class="form-control input-md">
           </div>
         </div>
           <!-- E Date input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="dateinput">End Date</label>  
           <div class="col-md-4">
-          <input id="dateinput2" name="dateinput" type="date" class="form-control input-md">
+          <input id="dateinput2" name="dateend" type="date" class="form-control input-md">
           </div>
         </div>
            <!-- S time input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="timeinput">Start Time</label>  
           <div class="col-md-4">
-          <input id="timeinput" name="timeinput" type="time" value = "08:00"class="form-control input-md">
+          <input id="timeinput" name="timestart" type="time" value = "08:00"class="form-control input-md">
           </div>
         </div>
             <!-- E time input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="timeinput">End Time</label>  
           <div class="col-md-4">
-          <input id="timeinput" name="timeinput" type="time" value = "23:00"class="form-control input-md">
+          <input id="timeinput" name="timeend" type="time" value = "23:00"class="form-control input-md">
           </div>
         </div>
         <!-- Textarea -->
         <div class="form-group">
           <label class="col-md-4 control-label" for="textarea">Description/Venue</label>
           <div class="col-md-4">                     
-            <textarea class="form-control" id="textarea" name="textarea" placeholder="Describe the your event and venue here.."></textarea>
+            <textarea class="form-control" id="textarea" name="venue" placeholder="Describe the your event and venue here.."></textarea>
           </div>
         </div>
       </fieldset>

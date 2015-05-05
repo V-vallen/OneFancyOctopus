@@ -1,5 +1,8 @@
 <h1>Test</h1>
-<?php print_r($users) ?>
+<?php 
+//echo "<script> var info = '".json_encode($users)."'<script>";
+
+?>   
 <?php foreach ($users as $user):?>
 
 <p><b>Get user id:</b></p>
@@ -26,13 +29,13 @@
 	<p><?php echo $user['Event'][$x]['event_creator_id'] ?><p>
 
 	<p><b>Get event event name:</b></p>
-	<p><?php echo $user['Event'][$x]['event_name'] ?><p>
+	<p><?php echo $user['Event'][$x]['title'] ?><p>
 
 	<p><b>Get event start date:</b></p>
-	<p><?php echo $user['Event'][$x]['C_Vst'] ?><p>
+	<p><?php echo $user['Event'][$x]['start'] ?><p>
  	
  	<p><b>Get event end date:</b></p>
-	<p><?php echo $user['Event'][$x]['C_Vet'] ?><p>
+	<p><?php echo $user['Event'][$x]['end'] ?><p>
 
 	<p><b>Get event start time:</b></p>
 	<p><?php echo $user['Event'][$x]['S_time'] ?><p>

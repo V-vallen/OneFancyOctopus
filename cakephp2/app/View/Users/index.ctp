@@ -1,19 +1,13 @@
 <!doctype html>
- <?php include'add.ctp'?>
+ <?php include'add.ctp';
+       
+ ?>  
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Mixture + Bootstrap</title>
+        <title>Calendar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <style>
-            body {
-                padding-top: 50px;
-            }
-            .starter-template {
-                padding: 40px 15px;
-            }
-        </style>
+        <?php echo "<script> var info = '".json_encode($user['Event'])."'</script>";?>
          
     </head>
     <body>
@@ -45,14 +39,10 @@
 				<h1><?php echo $user['User']['firstname'] ?> <?php echo $user['User']['lastname'] ?></h1>
 				<div id = "datepicker"></div>
 				<br>
-				<a href="#" class="btn btn-lg btn-success" id="openModal" >Add Event</a>
-        <a href="#" class="btn btn-lg btn-success" id="showEvent" >Show Event</a>
-				<h2>Events:</h2>
-				<li class="nav nav-sidebar">
-          <?php for ($x=0; $x<count($user['Event']); $x++) : ?>
-					<ul><a href="#" id="openModal"><?php echo $user['Event'][$x]['event_name'] ?></a> </ul>
-					 <?php endfor ?>
-				</li>
+				<div id="addEvent"></div>
+                <!--<a href="#" class="btn btn-lg btn-success" id="showEvent" >Show Event</a>-->
+				
+                <div id = "showList"></div>
 			</div>
 			<div class="col-md-9">
 				<div id = "calendar"></div>
@@ -65,11 +55,7 @@
 	<div class="col-md-12">
 		<p>Footer goes here</p>
 	</div>
-
 </div>
-		 
-        
-        <?php echo $this->Js->writeBuffer(); ?>
+	<?php echo $this->Js->writeBuffer(); ?>
     </body>
-
 </html>
