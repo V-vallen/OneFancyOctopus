@@ -40,8 +40,8 @@ echo $this->Form->dateTime('E_time', array(
 ));*/
 
 echo $this->Form->input('event_creator_id', array(
-  'type' => 'hidden',
-  'value'=> 1
+  'type' => 'hidden'
+   
   ));
 
     ?>

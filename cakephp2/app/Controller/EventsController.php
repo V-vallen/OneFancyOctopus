@@ -88,9 +88,9 @@ public function close() {
 // JOIn to the event
 public function join($id){
  
-     $this->EventUser->create();
-            $data = array('event_id' => $id, 'user_id' => 1);
-            if ($this->Event->save($data)) {
+     $this->Event->User->create();
+            $data = array('event.id' => $id, 'user.id' => 1);
+            if ($this->Event->User->save($data)) {
                 $this->Session->setFlash(__('Your post has been saved.'));
              
             }else{

@@ -37,6 +37,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('bootstrap');
 		echo $this->Html->css('fullcalendar.min');
 		echo $this->Html->css('app');
+		echo $this->Html->css('jquery-ui.theme');
+		echo $this->Html->css('jquery-ui.structure');
 		
 
 		echo $this->Html->script('jquery.min');

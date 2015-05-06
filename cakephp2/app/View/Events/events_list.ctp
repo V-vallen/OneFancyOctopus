@@ -1,4 +1,6 @@
 <?php include'show.ctp' ?>
+
+ 
 <?php $this->layout = false;?>
  <h2>Events:</h2>
 <li class="nav nav-sidebar">        
@@ -18,12 +20,15 @@
                 );
             ?></button>
 
-             <button type="button" class="btn btn-default" id = "editEvent"><?php
-                echo $this->Form->postLink(
-                    'Join',
-                     array('action' => 'join', $events [$x]['Event']['id'])
-                );
-            ?></button>
+            <?php if ($events[$x]['Event']['event_creator_id'] == 2) :?>
+                 <button type="button" class="btn btn-default" id = "editEvent"><?php
+                    echo $this->Form->postLink(
+                        'Join',
+                         array('action' => 'join', $events [$x]['Event']['id'])
+                    );
+                ?></button>
+
+            <?php endif?>
         </div></div>
         </ul>
         <?php endfor ?>

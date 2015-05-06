@@ -9,7 +9,8 @@ $(function(){
                         title: "'"+t[i].title+"'",
                         start: "'"+t[i].start+"'",
                         end: "'"+t[i].end+"'",
-                        id: "'"+t[i].id+"'"
+                        id: "'"+t[i].id+"'",
+                        color: '#D6A51E'
                         
                		});
     }
@@ -32,9 +33,7 @@ $(function(){
 
 		});
 
-
-
-
+ 
 	 
 	 
 
@@ -75,8 +74,7 @@ $(function(){
 		dayClick: function(date, jsEvent, view) {
 			 
 			$("#basicModal").modal("show");  
-			alert(date.format());
-        	$("#dateinput").val(date.format());
+			$("#dateinput").val(date.format());
         	
 	    },
 

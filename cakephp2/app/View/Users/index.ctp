@@ -11,27 +11,38 @@
          
     </head>
     <body>
-        <div class="navbar-header navbar navbar-inverse navbar-fixed-top">
+
+
+        
+        
     <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+<div class="navbar-header navbar navbar-inverse navbar-fixed-top">
+        <header class="codrops-header"> 
+                    <nav class="cl-effect-1"> 
+                    <ul id="navbar">
+                    <li class="active"><a href="/">About</a></li>
+                    <li ><a href="../events/add">Add Event</a></li>
+                    <li ><a href="#" id="openModal">Test</a></li>
+                    <li><a href="front">Logout</a></li>
+                    </ul>
+                    </nav> 
+        </header>
+
+
+      <!--
         <a class="navbar-brand" href="index">CALENDAR</a>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="/">About</a></li>
-                <!--<li ><a href="/add_event">Add Event</a></li>                
-                <li ><a href="#" id="openModal">Test</a></li>-->
+                
                 <li ><a href="front">Logout</a></li>
                  
             </ul>
-        </div>
+        </div> -->
     </div>
 </div>
 
-        <div class="container">
+        <div class="content">
             
 	<div class="starter-template">
 		<div class="row">
@@ -41,7 +52,14 @@
 				<br>
 				 
                 <!--<a href="#" class="btn btn-lg btn-success" id="showEvent" >Show Event</a>-->
+                
+                <nav class="cl-effect-12"> 
+                <div id="navbar">
 				<a href="../events/add" class="btn btn-lg btn-success" id="openModal" >Add Event</a>
+                </div>
+                </nav> 
+                
+
                 <div id = "showList"></div>
 			</div>
 			<div class="col-md-9">
@@ -51,11 +69,11 @@
 
         </div>
         
-<div class="row">
+<!--<div class="row">
 	<div class="col-md-12">
 		<p>Footer goes here</p>
 	</div>
-</div>
+</div>-->
 	<?php echo $this->Js->writeBuffer(); ?>
     </body>
 </html>
