@@ -20,9 +20,9 @@
         <header class="codrops-header"> 
                     <nav class="cl-effect-1"> 
                     <ul id="navbar">
+                    <li class="active"><a href="index">Calendar</a></li>
                     <li class="active"><a href="/">About</a></li>
                     <li ><a href="../events/add">Add Event</a></li>
-                    <li ><a href="#" id="openModal">Test</a></li>
                     <li><a href="front">Logout</a></li>
                     </ul>
                     </nav> 

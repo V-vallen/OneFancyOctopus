@@ -16,7 +16,7 @@ body li {
 	padding: 1em 1em;
 	color: #fff;
 	text-align: center;
-	background: #001211; 
+	background: rgb(34,49,63); 
 	background-size: cover;
 }
 
@@ -177,6 +177,7 @@ footer .copyrights p{
 
 body {
  padding-top: 50px;
+  
 
 }
 
